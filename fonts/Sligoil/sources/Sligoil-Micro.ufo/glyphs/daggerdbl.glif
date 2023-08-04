@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="daggerdbl" format="2">
+	<advance width="600"/>
+	<unicode hex="2021"/>
+	<guideline x="426" y="134" angle="0"/>
+	<outline>
+		<contour>
+			<point x="255" y="134" type="line"/>
+			<point x="345" y="134" type="line"/>
+			<point x="345" y="218" type="line"/>
+			<point x="339" y="323" type="line"/>
+			<point x="339" y="324" type="line"/>
+			<point x="530" y="324" type="line"/>
+			<point x="530" y="394" type="line"/>
+			<point x="340" y="394" type="line"/>
+			<point x="337" y="467" type="line"/>
+			<point x="340" y="540" type="line"/>
+			<point x="530" y="540" type="line"/>
+			<point x="530" y="610" type="line"/>
+			<point x="339" y="610" type="line"/>
+			<point x="339" y="611" type="line"/>
+			<point x="345" y="716" type="line"/>
+			<point x="345" y="800" type="line"/>
+			<point x="255" y="800" type="line"/>
+			<point x="255" y="716" type="line"/>
+			<point x="261" y="611" type="line"/>
+			<point x="261" y="610" type="line"/>
+			<point x="70" y="610" type="line"/>
+			<point x="70" y="540" type="line"/>
+			<point x="260" y="540" type="line"/>
+			<point x="263" y="467" type="line"/>
+			<point x="260" y="394" type="line"/>
+			<point x="70" y="394" type="line"/>
+			<point x="70" y="324" type="line"/>
+			<point x="261" y="324" type="line"/>
+			<point x="255" y="218" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>

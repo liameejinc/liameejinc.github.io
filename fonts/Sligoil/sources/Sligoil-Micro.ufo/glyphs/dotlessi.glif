@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dotlessi" format="2">
+	<advance width="600"/>
+	<unicode hex="0131"/>
+	<anchor x="300" y="0" name="bottom"/>
+	<anchor x="520" y="0" name="ogonek"/>
+	<anchor x="300" y="540" name="top"/>
+	<outline>
+		<contour>
+			<point x="80" y="0" type="line"/>
+			<point x="520" y="0" type="line"/>
+			<point x="520" y="75" type="line"/>
+			<point x="339" y="75" type="line"/>
+			<point x="345" y="180" type="line"/>
+			<point x="345" y="540" type="line"/>
+			<point x="80" y="540" type="line"/>
+			<point x="80" y="470" type="line"/>
+			<point x="261" y="470" type="line"/>
+			<point x="255" y="365" type="line"/>
+			<point x="255" y="180" type="line"/>
+			<point x="261" y="75" type="line"/>
+			<point x="80" y="75" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>
