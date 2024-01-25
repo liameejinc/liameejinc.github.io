@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="O" format="2">
+	<advance width="600"/>
+	<unicode hex="004F"/>
+	<guideline x="500" y="-10" angle="0"/>
+	<anchor x="300" y="0" name="bottom"/>
+	<anchor x="300" y="350" name="center"/>
+	<anchor x="540" y="10" name="ogonek"/>
+	<anchor x="300" y="700" name="top"/>
+	<anchor x="20" y="700" name="topleft"/>
+	<anchor x="580" y="700" name="topright"/>
+	<outline>
+		<contour>
+			<point x="444" y="350" type="curve"/>
+			<point x="535" y="350" type="line"/>
+			<point x="535" y="615"/>
+			<point x="449" y="710"/>
+			<point x="300" y="710" type="curve"/>
+			<point x="300" y="640" type="line"/>
+			<point x="400" y="640"/>
+			<point x="444" y="565"/>
+		</contour>
+		<contour>
+			<point x="300" y="-10" type="curve"/>
+			<point x="300" y="65" type="line"/>
+			<point x="200" y="65"/>
+			<point x="156" y="145"/>
+			<point x="156" y="350" type="curve"/>
+			<point x="65" y="350" type="line"/>
+			<point x="65" y="85"/>
+			<point x="151" y="-10"/>
+		</contour>
+		<contour>
+			<point x="300" y="65" type="curve"/>
+			<point x="300" y="-10" type="line"/>
+			<point x="449" y="-10"/>
+			<point x="535" y="85"/>
+			<point x="535" y="350" type="curve"/>
+			<point x="444" y="350" type="line"/>
+			<point x="444" y="145"/>
+			<point x="400" y="65"/>
+		</contour>
+		<contour>
+			<point x="65" y="350" type="curve"/>
+			<point x="156" y="350" type="line"/>
+			<point x="156" y="565"/>
+			<point x="200" y="640"/>
+			<point x="300" y="640" type="curve"/>
+			<point x="300" y="710" type="line"/>
+			<point x="151" y="710"/>
+			<point x="65" y="615"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>

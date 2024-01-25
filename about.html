@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <title>Lia Choi</title>
+
+        <link rel="icon" href="/images/favicon/favicon.ico" sizes="any">
+        <link rel="mask-icon" href="/images/favicon/favicon.ico" 
+        color="#000000">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <div class="icon"><a href="index.html"><img class="star-icon" src="images/logo.svg"></a></div>
+                <ul class="navbar">
+                    <li class="tab"><a href="projects.html">PROJECTS!</a></li>
+                    <li class="tab"><a href="about.html">ABOUT ME?</a></li>
+                    <li class="tab"><a href="contact.html">CONTACT @</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div id="container"></div>
+        
+        <div class="introduction">
+            <p>
+            Curious About Me? 
+            </p>
+        </div>
+
+        <div class="description">
+            <p>
+            <br>
+            ME TOO — I’M STILL FIGURING MYSELF OUT. 
+            <br>
+            (BUT HERE IS WHAT I KNOW SO FAR!) 
+            <br>
+            <br>
+            FIRST OF ALL, IT’S NICE TO MEET YOU - THANK YOU FOR DROPPING BY!
+            <br>
+            <br>
+            MY NAME IS LIA (MEEJIN) CHOI.  
+            <br>
+            I AM CURRENTLY BASED IN SAN DIEGO, CA, GREATLY ENJOYING THE SUN & THE BEACH ☼ 
+            <br>
+            <br> 
+            (AS OF NOW) MY CAREER PASSIONS CONSIST OF DESIGN & COFFEE, 
+            <br>
+            BOTH THINGS I LOVE TO CREATE AND INDULGE IN.
+            <br>
+            <br>
+            WITH ANY FREE TIME I HAVE,
+            <br>
+            I PUT MY HEADPHONES ON, TURN UP THE MUSIC, AND HEAD OVER TO MY LOCAL GOODWILL
+            <br> 
+            TO SPLURGE ON ANOTHER OVERSIZED SWEATER.
+            <br>
+            OR CAFE HOP AROUND THE CITY WITH FRIENDS.
+            <br>
+            <br> 
+            I FOCUS HEAVILY ON INTRICACIES, INTENTIONALITY, AND ACCESSIBILITY IN EVERYTHING I DO.
+            <br>
+            <br>  
+            IN DESIGN, MY MAIN FOCUS SO FAR HAS BEEN UI/UX & BRANDING. 
+            <br>
+            I ALSO LOVE BRINGING SOME MY PROJECTS TO LIFE WITH CODE (E.G. THIS WEBSITE ˆˆ).
+            <br>
+            <br>     
+            I GRADUATED FROM UNIVERSITY OF CALIFORNIA, BERKELEY 
+            <br>
+            WITH A MAJOR IN COGNITIVE SCIENCE, 
+            <br>
+            MINOR IN HISTORY OF ART & CERTIFICATE IN DESIGN INNOVATION.
+            <br>
+            I HAVE FUN PUTTING ALL THAT KNOWLEDGE TO GOOD USE!
+            <br>
+            <br>
+            FOR THE PAST TWO YEARS, I FOUND A LOT OF JOY IN COFFEE.
+            <br>
+            HOWEVER, I AM READY FOR A NEW CHAPTER IN DESIGN. 
+            <br>
+            :-)
+            </p>
+        </div>
+
+
+
+        <footer>
+            <div class="footer">
+                <ul class="links-list">
+                    <li class="link"><a href="https://www.linkedin.com/in/liameejinc/" target="_blank">LINKEDIN</a></li>
+                    <li class="link"><a href="https://www.instagram.com/loookupthere/" target="_blank">INSTAGRAM</a></li>
+                    <li class="link" id="resume"><a href="pdf/Resume.pdf" target="_blank">RESUME</a></li>
+                </ul>
+
+                <ul class="links-list" id="info">
+                    <li class="link-info">
+                        <div class="popup" id="about" onclick="myFunction()">i
+                            <span class="popuptext" id="myPopup">
+                                PSST:
+                                <br>
+                                HAND-DESIGNED,
+                                <br>
+                                HAND-CODED
+                                <br>
+                                BY ME :-) 
+                                <br>
+                                2024 ©
+                                <br>
+                                LIA MEEJIN
+                                <br>
+                                CHOI
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script>
+            function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+            }
+        </script>
+
+        <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+        <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/614738/react-draggable.min.js"></script>
+        <script type="text/babel">
+
+        var Draggable = ReactDraggable;
+        var App = React.createClass({
+            getInitialState: function () {
+            return {
+                activeDrags: 0,
+                deltaPosition: {
+                x: 0, y: 0
+                },
+                controlledPosition: {
+                x: -400, y: 200
+                }
+            };
+            },
+
+            handleDrag: function (e, ui) {
+            const {x, y} = this.state.deltaPosition;
+            this.setState({
+                deltaPosition: {
+                x: x + ui.deltaX,
+                y: y + ui.deltaY,
+                }
+            });
+            },
+
+            onStart: function() {
+            this.setState({activeDrags: ++this.state.activeDrags});
+            },
+
+            onStop: function() {
+            this.setState({activeDrags: --this.state.activeDrags});
+            },
+
+            // For controlled component
+            adjustXPos: function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const {x, y} = this.state.controlledPosition;
+            this.setState({controlledPosition: {x: x - 10, y}});
+            },
+
+            adjustYPos: function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const {controlledPosition} = this.state;
+            const {x, y} = this.state.controlledPosition;
+            this.setState({controlledPosition: {x, y: y - 10}});
+            },
+
+            onControlledDrag: function(e, position) {
+            const {x, y} = position;
+            this.setState({controlledPosition: {x, y}});
+            },
+
+            onControlledDragStop: function(e, position) {
+            const {x, y} = position;
+            this.setState({controlledPosition: {x, y}});
+            },
+
+            render: function () {
+            const dragHandlers = {onStart: this.onStart, onStop: this.onStop};
+            const {deltaPosition, controlledPosition} = this.state;
+            return (
+                <div>
+                <Draggable>
+                    <div className="box" id="about" {...dragHandlers}>
+                        <div className="box-background"></div>
+                        <span className="menu-move">
+                            <div className="circle-move">
+                            <div className="badge c-black" id="badge">
+                                <span className="badge__char">A</span>
+                                <span className="badge__char"></span>
+                                <span className="badge__char">Q</span>
+                                <span className="badge__char">U</span>
+                                <span className="badge__char">I</span>
+                                <span className="badge__char">C</span>
+                                <span className="badge__char">K</span>
+                                <span className="badge__char"></span>
+                                <span className="badge__char">B</span>
+                                <span className="badge__char">L</span>
+                                <span className="badge__char">U</span>
+                                <span className="badge__char">R</span>
+                                <span className="badge__char">B</span>
+                                <span className="badge__char"></span>
+                                <span className="badge__char">A</span>
+                                <span className="badge__char">B</span>
+                                <span className="badge__char">O</span>
+                                <span className="badge__char">U</span>
+                                <span className="badge__char">T</span>
+                                <span className="badge__char"></span>
+                                <span className="badge__char">M</span>
+                                <span className="badge__char">E</span>
+                                <span className="badge__char"></span>
+                                <span className="badge__char">✧</span>
+                                <span className="badge__char"></span>
+                                <span className="badge__char">D</span>
+                                <span className="badge__char">I</span>
+                                <span className="badge__char">D</span>
+                                <span className="badge__char"></span>
+                                <span className="badge__char">Y</span>
+                                <span className="badge__char">O</span>
+                                <span className="badge__char">U</span>
+                                <span className="badge__char"></span>
+                                <span className="badge__char">E</span>
+                                <span className="badge__char">N</span>
+                                <span className="badge__char">J</span>
+                                <span className="badge__char">O</span>
+                                <span className="badge__char">Y</span>
+                                <span className="badge__char"></span>
+                                <span className="badge__char">G</span>
+                                <span className="badge__char">E</span>
+                                <span className="badge__char">T</span>
+                                <span className="badge__char">T</span>
+                                <span className="badge__char">I</span>
+                                <span className="badge__char">N</span>
+                                <span className="badge__char">G</span>
+                                <span className="badge__char"></span>
+                                <span className="badge__char">T</span>
+                                <span className="badge__char">O</span>
+                                <span className="badge__char"></span>
+                                <span className="badge__char">K</span>
+                                <span className="badge__char">N</span>
+                                <span className="badge__char">O</span>
+                                <span className="badge__char">W</span>
+                                <span className="badge__char"></span>
+                                <span className="badge__char">M</span>
+                                <span className="badge__char">E</span>
+                                <span className="badge__char">?</span>
+                                <span className="badge__char"></span>
+                                <span className="badge__char">✧</span>
+                                <span className="badge__char"></span>
+                                <div className="badge__emoji">
+                                <img className="img-bottom" src="images/smiley-face-heart.png" alt="" height="150" width="150"></img>
+                                </div>
+                            </div>
+                            </div>
+                        </span>
+                    </div>
+                </Draggable>
+                </div>
+            );
+            }
+        });
+
+        ReactDOM.render(<App/>, document.getElementById('container'));
+
+        const element = document.querySelectorAll(".badge__char");
+            const step = 360/element.length;
+
+            element.forEach((elem, i) => {
+            elem.style.setProperty('--char-rotate', (i * step) + 'deg');
+            })
+
+            const element2 = document.querySelectorAll(".badge__char-2");
+            const step2 = 360/element2.length;
+
+            element2.forEach((elem, i) => {
+            elem.style.setProperty('--char-rotate-2', (i * step2) + 'deg');
+            })
+
+            const foo = (360 / 7);
+
+            for (i = 0; i <= 7; i++) {
+            console.log((i * foo) + 'deg');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tbar" format="2">
+	<advance width="600"/>
+	<unicode hex="0167"/>
+	<outline>
+		<contour>
+			<point x="99" y="285" type="line"/>
+			<point x="149" y="285" type="line"/>
+			<point x="190" y="292" type="line"/>
+			<point x="280" y="292" type="line"/>
+			<point x="335" y="285" type="line"/>
+			<point x="485" y="285" type="line"/>
+			<point x="485" y="355" type="line"/>
+			<point x="335" y="355" type="line"/>
+			<point x="280" y="349" type="line"/>
+			<point x="190" y="349" type="line"/>
+			<point x="149" y="355" type="line"/>
+			<point x="99" y="355" type="line"/>
+		</contour>
+		<component base="t"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni23ED" format="2">
+	<advance width="600"/>
+	<unicode hex="23ED"/>
+	<outline>
+		<contour>
+			<point x="300" y="-22" type="curve"/>
+			<point x="506" y="-22"/>
+			<point x="672" y="144"/>
+			<point x="672" y="350" type="curve"/>
+			<point x="672" y="554"/>
+			<point x="506" y="722"/>
+			<point x="300" y="722" type="curve"/>
+			<point x="96" y="722"/>
+			<point x="-72" y="554"/>
+			<point x="-72" y="350" type="curve"/>
+			<point x="-72" y="144"/>
+			<point x="96" y="-22"/>
+		</contour>
+		<contour>
+			<point x="70" y="110" type="line"/>
+			<point x="70" y="590" type="line"/>
+			<point x="247" y="350" type="line"/>
+		</contour>
+		<contour>
+			<point x="266" y="110" type="line"/>
+			<point x="266" y="590" type="line"/>
+			<point x="444" y="350" type="line"/>
+		</contour>
+		<contour>
+			<point x="463" y="110" type="line"/>
+			<point x="463" y="590" type="line"/>
+			<point x="530" y="590" type="line"/>
+			<point x="530" y="110" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.67,0.95,0.38,1</string>
+		</dict>
+	</lib>
+</glyph>
