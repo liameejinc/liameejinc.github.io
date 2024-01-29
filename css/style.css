@@ -81,7 +81,7 @@ ul.links-list li.link-info {
     margin-bottom: 23px; 
 }
 ul.links-list li.link-info#contact {
-    margin-bottom: 20px; 
+    margin-top: 20px;
 }
 .popup {
     position: relative;
@@ -274,7 +274,7 @@ ul.links-list li.link-info#contact {
         width: 100%;
     }
     .introduction#index {
-        height: 515px;  
+        height: 525px;  
     }
     .intro-change {
         width: 90%; 
@@ -316,6 +316,13 @@ ul.links-list li.link-info#contact {
     }
     .experiences {
         display: none; 
+    }
+    .column {
+        width: fit-content; 
+    }
+    .column p {
+        width: fit-content;
+        margin: 0; 
     }
 }
 
@@ -419,7 +426,6 @@ ul.links-list li.link-info#contact {
 /*CONTACT.HTML - FORM */
 #my-form {
     padding-top: 10px;
-    padding-bottom: 45px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 0px 0px 10px 10px;
