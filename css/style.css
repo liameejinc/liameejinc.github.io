@@ -330,6 +330,12 @@ ul.links-list li.link-info#contact {
 .description {
     margin-bottom: 20px; 
 }
+.description p a {
+    text-decoration: none; 
+}
+.description a:hover {
+    color: #0014FF; 
+}
 
 /* PROJECTS.HTML - PROJECTS */
 .projects-carousel {
