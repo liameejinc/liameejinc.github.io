@@ -686,3 +686,30 @@ input[type=text]:focus, input[type=textarea]:focus {
     }
 }
 
+/* ACUPPA PROJECT */
+.project-intro {
+    text-align: center; 
+}
+.intro {
+    display: inline-block; 
+    /*border: 1px solid red;*/
+}
+.intro#intro-right {
+    padding-left: 40px; 
+}
+.intro-title {
+    font-family: 'Sligoil';
+    font-size: 26pt;
+    text-align: left; 
+}
+.intro-tagline {
+    color: #0014FF;
+    text-align: left; 
+}
+.intro-description {
+    text-align: left; 
+}
+.realtalk-img {
+    height: 290px; 
+}
+
