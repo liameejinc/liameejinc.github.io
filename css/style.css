@@ -686,13 +686,13 @@ input[type=text]:focus, input[type=textarea]:focus {
     }
 }
 
-/* ACUPPA PROJECT */
+/* ACUPPA PROJECT 
 .project-intro {
     text-align: center; 
 }
 .intro {
     display: inline-block; 
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 .intro#intro-right {
     padding-left: 40px; 
@@ -711,5 +711,37 @@ input[type=text]:focus, input[type=textarea]:focus {
 }
 .realtalk-img {
     height: 290px; 
-}
+} */
 
+/* LOCALLY PROJECT */
+.project-intro {
+    text-align: center; 
+}
+.intro-title {
+    font-family: 'Sligoil';
+    font-size: 26pt;
+}
+.intro-tagline {
+    color: #0014FF;
+    font-weight: 400; 
+}
+.intro-description {
+    margin-top: 15px; 
+}
+.role-div {
+    margin-top: 20px; 
+}
+.role-div-title {
+    width: 600px; 
+    /*text-align: left;*/
+    margin-bottom: 10px; 
+    font-family: 'Sligoil';
+    font-size: 11pt;
+}
+.role-div-description {
+    width: 600px; 
+    height: 100px; 
+    border: 1px solid #E5E5E5; 
+    border-radius: 25px; 
+
+}
